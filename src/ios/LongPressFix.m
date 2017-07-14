@@ -9,7 +9,7 @@
   // 0.45 is ok for 'regular longpress', 0.05-0.08 is required for '3D Touch longpress',
   // but since this will also kill onclick handlers (not ontouchend), I made it optional
   if ([self.commandDelegate.settings objectForKey:@"suppress3dtouch"] && [[self.commandDelegate.settings objectForKey:@"suppress3dtouch"] boolValue]) {
-    self.lpgr.minimumPressDuration = 0.05f;
+    self.lpgr.minimumPressDuration = 0.45f;
   }
 
   self.lpgr.allowableMovement = 100.0f;
